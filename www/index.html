@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Youtube Web App</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+      document.addEventListener(
+        "deviceready",
+        function () {
+          var ref = cordova.InAppBrowser.open(
+            "https://m.youtube.com",
+            "_blank",
+            "location=no"
+          );
+        },
+        false
+      );
+    </script>
+  </head>
+  <body>
+    <h1>Loading YouTube...</h1>
+  </body>
+</html>
